@@ -16,11 +16,35 @@
 
 </head>
 <body>
-    <div class="conteudo">
-        <div class="ocupaespaco2"></div>
-        <div class="topo">
-            <h1>BuzzQuizz</h1>
+    <div class="topo">
+        <h1 onclick="voltarInicio(this)">BuzzQuizz</h1>
+    </div>
+    <div class="informacoesbasicas controle display">
+        <div class="basico">
+            <p>Comece pelo começo</p>
+            <div class="insira">
+                <p> nome do quiz:</p>
+                <textarea class="informações">
+                </textarea>
+                <p>Url da imagem:</p>
+                <textarea class="informações">
+                </textarea>
+                <p>número de perguntas:</p>
+                <textarea class="informações">
+                </textarea>
+                <p>quantidade de niveis</p>
+                <textarea class="informações">
+                </textarea>
+            </div>
+            <div class="prosseguir">
+                <p>Prosseguir pra criar perguntas</p>
+            </div>
         </div>
+    </div>
+<!-- quiz +++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="telaquiz controle display">
+        <div class="ocupaespaco2"></div>
+        
         <div class="referencia">
             <img class="capa" src="./imagens/capapotter.png">
             <div class="textocapa">O quão Potterhead é você?</div>
@@ -34,24 +58,25 @@
                 <div class="textopergunta">transfigurou Malfoy?</div>
             </div>
     
-            <div class="blocoimagens">
+            <div class="opcoes">
+
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/gatineo.png">
-                    <div class="tituloimg">Gatito</div>
+                    <img src="./imagens/gatineo.png">
+                    <p>Gatito</p>
                 </div>
     
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/ratata.png">
-                    <div class="tituloimg">Ratata</div>
+                    <img src="./imagens/ratata.png">
+                    <p>Ratata</p>
                 </div>
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/sapogordo.png">
-                    <div class="tituloimg">Sapo Gordo</div>
+                    <img src="./imagens/sapogordo.png">
+                    <p>Sapo Gordo</p>
                 </div>
 
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/image 8.png">
-                    <div class="tituloimg">Furão</div>
+                    <img src="./imagens/image 8.png">
+                    <p>Furão</p>
                 </div>
     
             </div>
@@ -65,24 +90,28 @@
                 <div class="textopergunta">transfigurou Malfoy?</div>
             </div>
     
-            <div class="blocoimagens">
+            <div class="opcoes">
+                
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/gatineo.png">
-                    <div class="tituloimg">Gatito</div>
+                    <img src="./imagens/gatineo.png">
+                    <p>Gatito</p>
                 </div>
     
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/ratata.png">
-                    <div class="tituloimg">Ratata</div>
+                    <img src="./imagens/ratata.png">
+                    <p>Ratata</p>
                 </div>
+
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/sapogordo.png">
-                    <div class="tituloimg">Sapo Gordo</div>
+                    <img src="./imagens/sapogordo.png">
+                    <p>Sapo Gordo</p>
                 </div>
+
                 <div class="cardimgtexto">
-                    <img class="uniimg" src="./imagens/image 8.png">
-                    <div class="tituloimg">Furão</div>
+                    <img src="./imagens/image 8.png">
+                    <p>Furão</p>
                 </div>
+
             </div>
         </div>
 
@@ -93,7 +122,8 @@
     </div>
 
 <!-- proxima tela +++++++++++++++++++++++++++++++++++++++++++++ -->
-    <div class="conteudo">
+
+    <div class="inicio">
         <div class="topo">
             <h1>BuzzQuizz</h1>
         </div>
@@ -105,7 +135,7 @@
         <div class="cardcriarsquizz">
             <h2>Você não criou nenhum :(</h2>
             <h2>quizz ainda</h2>
-            <button class="botaocriarquizz"><div class="textobotao">Criar Quizz</div> </button>
+            <button class="botaocriarquizz" onclick="criarquiz(this)"><div class="textobotao">Criar Quizz</div> </button>
             
         </div>
         <!-- TEMPLETE CARD - SEUS QUIZZES-->
